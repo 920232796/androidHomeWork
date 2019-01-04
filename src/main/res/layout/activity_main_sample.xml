@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivitySample"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperereshlayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+            </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<RadioButton-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:id="@+id/mySet"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:button="@null"-->
+        <!--android:drawableTop="@drawable/tabbar_settings_pressed"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="我的"-->
+        <!--android:textColor="#B3B3B3"-->
+        <!--android:textSize="15sp"-->
+        <!--/>-->
+    <!---->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tabbar_contact_pressed"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/sign"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginRight="98dp"
+            android:onClick="addStory"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/tabbar_settings_pressed"
+            android:onClick="toMy"
+            />
+
+
+    </LinearLayout>
+
+
+</android.widget.RelativeLayout>
